@@ -1,0 +1,8 @@
+sa = float(input('Digite o salário atual: R$'))
+sn = sa+(sa*0.15)
+print('O novo salário será de {:.2f}'.format(sn))
+print('****Outra forma de fazer o exercício')
+sa = float(input('Digite o valor do salário atual: R$'))
+a = int(input('Digite o valor em porcentagem do aumento: %'))
+sn = sa + (sa*15/100)
+print(f'O novo salário será de R${sn:.2f}')
