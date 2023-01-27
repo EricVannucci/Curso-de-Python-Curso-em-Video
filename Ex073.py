@@ -1,0 +1,15 @@
+classificacao = ('Corinthians', 'Palmeiras', 'Santos', 'Grêmio', 'Cruzeiro', 'Flamengo', 'Vasco',
+                 'Chapecoense', 'Atlético MG', 'Botafogo', 'Athletico PR', 'Bahia', 'São Paulo',
+                 'Fluminense', 'Sport', 'Vitória', 'Coritiba', 'Avaí', 'Ponte Preta', 'Atlético GO')
+print(98 * '\033[32m-')
+print('\033[34m                   Classificação Campeonato Brasileiro de Futebol 2017')
+#porque não funciona assim? print(f'\033[34m{"Classificação Campeonato Brasileiro de Futebol 2017":^40}')
+print(98 * '\033[33m-\033[m')
+print(f'Os cinco primeiros colocados são {classificacao[:5]}')
+print(98 * '\033[32m-\033[m')
+print(f'Os quatro últimos colocados são {classificacao[-4:]}')
+print(98 * '\033[32m-\033[m')
+print(f'Os times em ordem alfabética são: {sorted(classificacao)}')
+print(98 * '\033[32m-\033[m')
+print(f'A Chapecoense terminou o campeonato na {classificacao.index("Chapecoense")+1}ª posição')
+print(98 * '\033[32m-\033[m')
