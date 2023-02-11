@@ -4,4 +4,4 @@ f = 1
 for c in range(1, n):
     f *= n
     n -= 1
-print(f'O fatorial é {f}.')
+print(f'O fatorial é {f:,}.'.replace(',', '.'))
